@@ -64,7 +64,7 @@ img_norm_cfg = dict(
 
 input_size = (128, 128)
 train_pipeline = [
-    dict(type='BoxJittor', prob=0.5),
+    dict(type='BoxJitter', prob=0.5),
     dict(type='ROIAlign', output_size=input_size),
     # dict(type='FlipRotate'),
     dict(type='RandomFlip', flip_ratio=0.5),

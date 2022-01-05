@@ -8,7 +8,7 @@ from mmseg.datasets.pipelines.formatting import to_tensor, DC
 
 
 @PIPELINES.register_module()
-class BoxJittor(object):
+class BoxJitter(object):
     def __init__(self, jittor_range=(0.8, 1.2), prob=0.5):
         self.jittor_range = jittor_range
         self.prob = prob

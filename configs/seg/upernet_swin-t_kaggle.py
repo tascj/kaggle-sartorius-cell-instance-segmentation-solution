@@ -65,7 +65,7 @@ img_norm_cfg = dict(
 
 crop_size = (128, 128)
 train_pipeline = [
-    dict(type='BoxJittor', prob=0.5),
+    dict(type='BoxJitter', prob=0.5),
     dict(type='ROIAlign', output_size=crop_size),
     dict(type='FlipRotate'),
     dict(type='Normalize', **img_norm_cfg),
